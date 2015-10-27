@@ -10,13 +10,13 @@ azureApp.config(function ($routeProvider) {
 
         // route for the home page
         .when('/', {
-            templateUrl: 'home.html',
+            templateUrl: '/views/home.html',
             controller: 'mainController'
         })
 
         // route for the about page
         .when('/about', {
-            templateUrl: 'about.html',
+            templateUrl: '/views/about.html',
             controller: 'aboutController'
         })
 
@@ -27,16 +27,4 @@ azureApp.config(function ($routeProvider) {
         });
 });
 
-// create the controller and inject Angular's $scope
-azureApp.controller('mainController', function ($scope) {
-    // create a message to display in our view
-    $scope.message = 'Angularjs making this possible!';
-});
 
-azureApp.controller('aboutController', function ($scope) {
-    $scope.message = 'The about page brought to you by Angularjs routing...';
-});
-
-azureApp.controller('contactController', function ($scope) {
-    $scope.message = 'Angularjs presenting the contact page...';
-});
