@@ -22,7 +22,7 @@ azureApp.config(function ($routeProvider) {
 
         // route for the contact page
         .when('/contact', {
-            templateUrl: 'contact.html',
+            templateUrl: '/views/contact.html',
             controller: 'contactController'
         });
 });
