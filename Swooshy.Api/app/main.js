@@ -10,21 +10,26 @@ azureApp.config(function ($routeProvider) {
 
         // route for the home page
         .when('/', {
-            templateUrl: '/views/home.html',
+            templateUrl: '/home.html',
             controller: 'mainController'
         })
 
         // route for the about page
         .when('/about', {
-            templateUrl: '/views/about.html',
+            templateUrl: '/about.html',
             controller: 'aboutController'
         })
-
+          .when('/tech', {
+              templateUrl: '/tech.html',
+              controller: 'techController'
+          })
         // route for the contact page
         .when('/contact', {
-            templateUrl: '/views/contact.html',
+            templateUrl: '/contact.html',
             controller: 'contactController'
         });
+
+  
 });
 
 
@@ -46,7 +51,7 @@ azureApp.controller('UpdateController', function ($scope, EmailService) {
     function message() {
         EmailService.message()
             .success(function (response) {
-                $scope.msg = response();
+                $scope.msg = response;
 
                 console.log("success? : " + response);
             })

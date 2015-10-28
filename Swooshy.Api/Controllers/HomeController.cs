@@ -10,7 +10,7 @@ namespace Swooshy.Api.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Swooshy: my SPA for learning various web technologies like Angularjs";
 
             return View();
         }

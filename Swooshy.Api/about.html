@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+
+        <br />The below message is coming from the about controller js
+        <br />
+     
+    </div>
+
+<div ng-controller="UpdateController">
+  
+    <table class="table">
+        <tr>
+            <th>Full Name</th>
+            <th>
+                Message
+            </th>
+        </tr>
+        <tr ng-repeat="m in msg">
+
+            <td>{{m.FullName}}</td>
+            <td>
+                {{m.DisplayText}}</td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+</html>

@@ -10,7 +10,7 @@ using Microsoft.Owin.Security;
 using System.Web.Http.Cors;
 namespace Swooshy.Api.Controllers
 {
-    [EnableCors(origins: "http://localhost:60705/", headers: "*", methods: "get,post")]
+   // [EnableCors(origins: "http://localhost:60705/", headers: "*", methods: "get,post")]
     public class EmailController : ApiController
     {
         // GET: api/Email
